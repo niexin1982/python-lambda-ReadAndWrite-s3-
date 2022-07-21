@@ -1,7 +1,7 @@
 # AWS　LambdaのPythonでS3の操作入門　　　
 
 ## 固定のS3オブジェクトを取得する
-AWS LambdaのPythonで決まりのS3バケットからオブジェクトを取得するの一番シンプルなサンプルです。
+AWS LambdaのPythonで決まりのS3バケットからオブジェクトを取得するの一番シンプルなサンプルです。   
 
 app1.py
 ```
@@ -26,11 +26,11 @@ def lambda_handler(event, context):
     return json.loads(body.decode('utf-8'))
 ```
 
-以下のウエブページを参考して、Lambdaの構築方法を理解する。
-https://dev.classmethod.jp/articles/get-s3-object-with-python-in-lambda/
+以下のウエブページを参考して、Lambdaの構築方法を理解する。    
+https://dev.classmethod.jp/articles/get-s3-object-with-python-in-lambda/   
 ---- 
 ## S3へのファイル投入のトリガーイベントでLambda起動
-トリガーイベントでLambdaを起動し、S3にアップロードファイルの情報を取得する。
+トリガーイベントでLambdaを起動し、S3にアップロードファイルの情報を取得する。    
 app2.py
 ```
 def lambda_handler(event, context):
@@ -41,9 +41,9 @@ def lambda_handler(event, context):
     print("key =", input_key)
 ```
 
-以下のウエブページを参考して、Lambdaのトリガーイベントを理解する。
-※該当ページ内容を少し古かったので、最新のマニュアルをご参考ください。
-https://dev.classmethod.jp/articles/lambda-my-first-step/
+以下のウエブページを参考して、Lambdaのトリガーイベントを理解する。   
+※該当ページ内容を少し古かったので、最新のマニュアルをご参考ください。   
+https://dev.classmethod.jp/articles/lambda-my-first-step/    
 
 ## S3にアップロードされたCSVファイルをAWS LambdaでJSONファイルに変換する
 
@@ -132,6 +132,6 @@ eventのサンプル
 
 ```
 
-以下のウエブページを参考して、Lambdaでcsvファイルの読取、JSONファイルへの書込みを理解する。
-※該当ページ内容を少し古かったので、最新のマニュアルをご参考ください。
+以下のウエブページを参考して、Lambdaでcsvファイルの読取、JSONファイルへの書込みを理解する。  
+※該当ページ内容を少し古かったので、最新のマニュアルをご参考ください。   
 https://dev.classmethod.jp/articles/lambda-my-first-step/
